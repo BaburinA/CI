@@ -1,0 +1,70 @@
+<!DOCTYPE html><html lang="ru">
+<head>
+    <meta charset="utf-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{meta_title}</title>
+    <meta name="description" content="{meta_description}" />
+    <meta name="keywords" content="{meta_keywords}" />
+
+    <link rel="stylesheet" href="/themes/site/css/bootstrap.css"  type="text/css"/>
+    
+    <link rel="stylesheet" href="/themes/site/css/bootstrap-datetimepicker.min.css" type="text/css" />
+    <link rel="stylesheet" href="/themes/site/css/fancySelect.css" type="text/css" />
+    <link rel="stylesheet" href="/themes/site/css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="/themes/site/css/jqueryslidemenu.css" type="text/css" />
+    <link rel="stylesheet" href="/themes/site/css/menu.css" type="text/css" />
+    <link rel="stylesheet" href="/themes/site/css/citheme.css" type="text/css" />
+    
+    
+	
+<style type="text/css">
+html .jqueryslidemenu{height: 1%;} /*Holly Hack for IE7 and below*/
+</style>    
+   
+</head>
+
+<body style="background-image: url('themes/site/images/flow.png'); background-size:cover;">
+    <!--<div class="menu"> -->
+  
+   
+ 
+        <div class="container">
+             <div id="myslidemenu" class="jqueryslidemenu"> 
+            <?=Modules::run('menu/get_menu', 'main_menu')?>
+        </div>
+    </div>
+
+	<div id="YMapsID">
+	{content}
+	</div>
+
+<div class="footer">
+        	<div>
+            	<div class="left_foot">
+	    <a href="forms/get_ajax/3" class="open_popup">{shot_cont}</a>
+                </div>
+                
+                <div class="right_foot"> 
+     <!-- <img src="ci-icon.ico" alt="" />   -->         	<a href="" class="call_foot" ></a>
+                </div>
+            </div>
+        </div>   
+        
+<script src="https://api-maps.yandex.ru/1.1/index.xml"></script>
+<script src="/themes/site/js/jquery-1.11.1.min.js"></script>
+<script src="/themes/site/js/jquery.nestable.js"></script>
+<script src="/themes/site/js/bootstrap.js" ></script>
+<script src="/themes/site/js/bootstrapValidator.js" ></script>
+<script src="/themes/site/js/script.js" ></script>
+<script src="/themes/site/js/jqueryslidemenu.js"></script>
+<script src="/themes/site/js/moment-with-locales.min.js"></script>
+<script src="/themes/site/js/bootstrap-datetimepicker.min.js"></script>
+<script src="/themes/site/js/ajax.js"></script>
+<script src="/themes/site/js/ajax-dynamic-list.js"></script>
+<script src="/themes/site/js/main.js"></script>
+<script src="/themes/site/js/menu.js"></script>
+<script src="/themes/site/js/tooltip.js"></script>
+<script src="/themes/site/js/theme.js"></script>
+</body>
+</html>

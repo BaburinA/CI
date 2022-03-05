@@ -1,0 +1,19 @@
+User-agent: *
+Disallow: /application
+Disallow: /modules
+Disallow: /system
+Disallow: /credo
+
+User-agent: Yandex
+Disallow: /application
+Disallow: /modules
+Disallow: /system
+Disallow: /credo
+Host: www.saloncredo.ru
+Sitemap: https://www.saloncredo.ru/sitemap.xml
+
+User-agent: Googlebot
+Disallow: /application
+Disallow: /modules
+Disallow: /system
+Disallow: /credo

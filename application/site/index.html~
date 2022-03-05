@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href={url}css/style.css type="text/css" rel="stylesheet"/>
+<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{content}</title>
+</head>
+
+<body>
+	<div class="wraper page-wrap">
+    	<div class="header main-header clearfix">
+        	<div>
+            	<div class="main-header__top">
+                    <a href="#"  class="menu-switcher">
+                          <span class="bar"></span>
+                          <span class="bar"></span>
+                          <span class="bar"></span>
+                    </a>
+                </div>
+            	<div class="header-menu">
+                	<div class="header_menu_open">
+                        <nav class="nav main-menu">
+                            <ul class="main-menu__menu">
+                                <li><a href="#" class="show-sm root-item">Продукция и услуги</a>
+                                	<ul class="sub-menu">
+                                    	<li><a href="#">Бетон</a></li>   
+                                        <li><a href="#">Цементный раствор</a></li>
+                                        <li><a href="#">ЖБИ</a></li>
+                                        <li><a href="#">Автобетононасос</a></li>
+                                        <li><a href="#">Кран-манипулятор</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="show-sm root-item">База знаний</a>
+                                	<ul class="sub-menu">
+                                    	<li><a href="#">Бетон</a></li>   
+                                        <li><a href="#">Цементный раствор</a></li>
+                                        <li><a href="#">ЖБИ</a></li>
+                                        <li><a href="#">Автобетононасос</a></li>
+                                        <li><a href="#">Кран-манипулятор</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Сотрудничество</a></li>
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Вакансии</a></li> 
+                                <li><a href="#">Контакты</a></li>                              
+                            </ul>
+                        </nav>
+                    </div>
+                    <a href="#" class="menu-switcher js-close-menu">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+	                </a>
+                    <div class="header-menu__cover"></div>
+                </div>
+                <div class="head_contacts">
+                    <p>+7 (3421) <span>77-59-20</span></p>         
+                    <span>Без выходных: 09: 00 - 19: 00</span>
+                </div>
+            </div>
+        </div>
+        <div class="top_block">
+        	<div>
+            	<div class="wrap_top">
+                	<a href="#" class="logo"><img src={url}img/icons/logo_ic.png alt="" /><p>СТРОЙ-ЭКСПРЕСС</p></a>
+                    <div class="title_top">Строительные материалы с доставкой по Удмуртии</div>
+                    <div class="pay_top">
+                    	<a href="#" class="pay_link">Оплата заказа картой</a>
+                        <a href="#" class="pricelist_link">Прайс-лист</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+        	<div>
+            	<div class="wrap_link_blocks">
+                	<a href="#" class="link_block" style="background:{url}url(img/photo/l1.jpg) no-repeat top center; background-size:cover;">
+                    	<div class="link_txt">
+                        	<p>Бетон</p>
+                        </div>
+                    </a>
+                    <a href="#" class="link_block link_block_discount" style="background:{url}url(img/photo/l2.jpg) no-repeat top center; background-size:cover;">
+                    	<div class="discount">
+                        	<span>%</span>
+                        </div>
+                    	<div class="link_txt">
+                        	<p>Раствор</p>
+                        </div>
+                    </a>
+                    <a href="#" class="link_block" style="background:{url}url(img/photo/l3.jpg) no-repeat top center; background-size:cover;">
+                    	<div class="link_txt">
+                        	<p>Жби</p>
+                        </div>
+                    </a>
+                    <a href="#" class="link_block" style="background:{url}url(img/photo/l4.jpg) no-repeat top center; background-size:cover;">
+                    	<div class="link_txt">
+                        	<p>Бетононасос</p>
+                        </div>
+                    </a>
+                    <a href="#" class="link_block" style="background:{url}url(img/photo/l5.jpg) no-repeat top center; background-size:cover;">
+                    	<div class="link_txt">
+                        	<p>Кран-манипулятор</p>
+                        </div>
+                    </a>
+                    <a href="#" class="link_block" style="background:{url}url(img/photo/l6.jpg) no-repeat top center; background-size:cover;">
+                    	<div class="link_txt">
+                        	<p>Автокран</p>
+                        </div>
+                    </a>
+                    <a href="#" class="link_block" style="background:{url}url(img/photo/l7.jpg) no-repeat top center; background-size:cover;">
+                    	<div class="link_txt">
+                        	<p>Фирменная футбока  в подарок каждому  покупателю</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="wrap_base">
+                	<h2>База знаний</h2>
+                    <div class="wrap_base_links">
+                        <a href="#" class="base_link">
+                        	<div class="base_img"><img src={url}img/photo/base.jpg alt="" /></div>
+                            <div class="base_txt">
+                            	<h3>Марка бетона</h3>
+                                <p>Какую марку бетона выбрать при заливке фундамента. Практические советы экспертов.</p>
+                            </div>
+                        </a>
+                        <a href="#" class="base_link">
+                        	<div class="base_img"><img src={url}img/photo/base.jpg alt="" /></div>
+                            <div class="base_txt">
+                            	<h3>Марка бетона</h3>
+                                <p>Какую марку бетона выбрать при заливке фундамента. Практические советы экспертов.</p>
+                            </div>
+                        </a>
+                        <a href="#" class="base_link">
+                        	<div class="base_img"><img src={url}img/photo/base.jpg alt="" /></div>
+                            <div class="base_txt">
+                            	<h3>Марка бетона</h3>
+                                <p>Какую марку бетона выбрать при заливке фундамента. Практические советы экспертов.</p>
+                            </div>
+                        </a>
+                        <a href="#" class="base_link">
+                        	<div class="base_img"><img src={url}img/photo/base.jpg alt="" /></div>
+                            <div class="base_txt">
+                            	<h3>Марка бетона</h3>
+                                <p>Какую марку бетона выбрать при заливке фундамента. Практические советы экспертов.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="container_about">
+                	<div class="about_left">
+                    	<h2>О компании</h2>
+                        <p>К ключевым компетенциям нашей команды безусловно можно отнести высокий уровень профессионализма и творческого потенциала, стремление максимально понять ожидания клиента и воплотить их в безупречном решении. На всех этапах реализации проекта, от его замысла до воплощения, мы всегда ищем лучшее из возможных решений и стремимся к достижению максимального результата при оптимальных затратах в ходе выполнения общестроительных, внутренних отделочных работ, а также при благоустройстве территорий.</p>
+                    </div>
+                    <div class="about_right">
+                    	<h2>Сотрудничество</h2>
+                        <p>К ключевым компетенциям нашей команды безусловно можно отнести высокий уровень профессионализма и творческого потенциала, стремление максимально понять ожидания клиента и воплотить их в безупречном решении. На всех этапах реализации проекта, от его замысла до воплощения, мы всегда ищем лучшее из возможных решений и стремимся к достижению максимального результата при оптимальных затратах в ходе выполнения общестроительных, внутренних отделочных работ, а также при благоустройстве территорий.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+        	<div>
+            	<div class="left_foot">
+                	<p>г. Ижевск, ул. Холмогорова, 17, офис 606</p>
+                    <a href="#">info@monolit18.ru</a>
+                    <span>+7 (3412) 77-59-20</span>
+                    <p>Без выходных с 09:00 до 19:00</p>
+                </div>
+                <div class="right_foot">
+                	<a href="#" class="call_foot">Заказать обратный звонок</a>
+                    <a href="#" class="scheme_foot">Контакты  и схема проезда</a>
+                </div>
+            </div>
+        </div>
+	</div>
+</body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src={url}js/mobile-detect.min.js?144619992435717></script>	
+<script type="text/javascript" src={url}js/main.js"></script>
+</html>

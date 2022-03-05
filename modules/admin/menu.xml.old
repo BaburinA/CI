@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>menu</name>
+    <title>Меню</title>
+    <sub_menu></sub_menu>
+    <description>Меню сайта</description>
+    <in_menu>1</in_menu>
+    <icon>tasks</icon>
+    <type></type>
+    <author>http://polyakov.co.ua</author>
+    <version>1.8</version>
+</module>

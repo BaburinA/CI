@@ -1,0 +1,154 @@
+<meta charset="utf-8">
+<link href="css/style.css" type="text/css" rel="stylesheet"/>
+<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>POPUP</title>
+</head>
+
+<body>
+	<div class="wraper page-wrap">
+    	<div class="header main-header clearfix">
+        	<div>
+            	<div class="main-header__top">
+                    <a href="#"  class="menu-switcher">
+                          <span class="bar"></span>
+                          <span class="bar"></span>
+                          <span class="bar"></span>
+                    </a>
+                </div>
+            	<div class="header-menu">
+                	<div class="header_menu_open">
+                        <nav class="nav main-menu">
+                            <ul class="main-menu__menu">
+                                <li><a href="#" class="show-sm root-item">Продукция и услуги</a>
+                                	<ul class="sub-menu">
+                                    	<li><a href="#">Бетон</a></li>   
+                                        <li><a href="#">Цементный раствор</a></li>
+                                        <li><a href="#">ЖБИ</a></li>
+                                        <li><a href="#">Автобетононасос</a></li>
+                                        <li><a href="#">Кран-манипулятор</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="show-sm root-item">База знаний</a>
+                                	<ul class="sub-menu">
+                                    	<li><a href="#">Бетон</a></li>   
+                                        <li><a href="#">Цементный раствор</a></li>
+                                        <li><a href="#">ЖБИ</a></li>
+                                        <li><a href="#">Автобетононасос</a></li>
+                                        <li><a href="#">Кран-манипулятор</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Сотрудничество</a></li>
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Вакансии</a></li> 
+                                <li><a href="#">Контакты</a></li>                              
+                            </ul>
+                        </nav>
+                    </div>
+                    <a href="#" class="menu-switcher js-close-menu">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+	                </a>
+                    <div class="header-menu__cover"></div>
+                </div>
+                <div class="head_contacts">
+                    <p>+7 (3421) <span>77-59-20</span></p>         
+                    <span>Без выходных: 09: 00 - 19: 00</span>
+                </div>
+            </div>
+        </div>
+        <div class="top_block">
+        	<div>
+            	<div class="wrap_top">
+                	<a href="#" class="logo"><img src="img/icons/logo_ic.png" alt="" /><p>СТРОЙ-ЭКСПРЕСС</p></a>
+                    <div class="title_top">Строительные материалы с доставкой по Удмуртии</div>
+                    <div class="pay_top">
+                    	<a href="#" class="pay_link">Оплата заказа картой</a>
+                        <a href="#" class="pricelist_link">Прайс-лист</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+        	<div>
+                <h2>Всплывающие окна</h2>
+                <a href="#" class="open_window1">Форма обратной связи / </a>
+                <a href="#" class="open_window2">Ваш заказ успешно отправлен / </a>
+                <a href="#" class="open_window3">Ваше сообщение отправлено / </a>
+            </div>
+        </div>
+        <div class="footer">
+        	<div>
+            	<div class="left_foot">
+                	<p>г. Ижевск, ул. Холмогорова, 17, офис 606</p>
+                    <a href="#">info@monolit18.ru</a>
+                    <span>+7 (3412) 77-59-20</span>
+                    <p>Без выходных с 09:00 до 19:00</p>
+                </div>
+                <div class="right_foot">
+                	<a href="#" class="call_foot">Заказать обратный звонок</a>
+                    <a href="#" class="scheme_foot">Контакты  и схема проезда</a>
+                </div>
+            </div>
+        </div>
+	</div>
+<div class="overlay overlay1" title="окно"></div>
+<div class="popup popup1">
+    <div class="close_window close_window1"></div>
+        <h2>Форма обратной связи</h2>
+        <form>
+        	<input type="text" class="cf_inp" placeholder="Ваше имя" />
+            <input type="text" class="cf_inp" placeholder="Ваш телефон или эл. почта" />
+            <textarea class="cf_inp" placeholder="Текст сообщения"></textarea>
+            <input type="submit" class="yellow_btn btn" value="ОТПРАВИТЬ" />
+        </form>
+</div>
+<div class="overlay overlay2" title="окно"></div>
+<div class="popup popup2">
+    <div class="close_window close_window2"></div>
+    <h2>Ваш заказ успешно отправлен</h2>
+    <a href="#" class="yellow_btn btn">ВЕРНУТЬСЯ НА САЙТ</a>
+</div>
+<div class="overlay overlay3" title="окно"></div>
+<div class="popup popup3">
+    <div class="close_window close_window3"></div>
+    <h2>Ваше сообщение отправлено</h2>
+    <a href="#" class="yellow_btn btn">ВЕРНУТЬСЯ НА САЙТ</a>
+</div>
+</body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/mobile-detect.min.js?144619992435717"></script>	
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	 $('.popup1 .close_window1, .overlay1').click(function (){
+		$('.popup1, .overlay1').css({'opacity': 0, 'visibility': 'hidden'});
+		
+		});
+		$('a.open_window1').click(function (e){
+		$('.popup1, .overlay1').css({'opacity': 1, 'visibility': 'visible'});
+		e.preventDefault();
+		});
+		
+	 $('.popup2 .close_window2, .overlay2').click(function (){
+		$('.popup2, .overlay2').css({'opacity': 0, 'visibility': 'hidden'});
+		
+		});
+		$('a.open_window2').click(function (e){
+		$('.popup2, .overlay2').css({'opacity': 1, 'visibility': 'visible'});
+		e.preventDefault();
+		});
+		
+	 $('.popup3 .close_window3, .overlay3').click(function (){
+		$('.popup3, .overlay3').css({'opacity': 0, 'visibility': 'hidden'});
+		
+		});
+		$('a.open_window3').click(function (e){
+		$('.popup3, .overlay3').css({'opacity': 1, 'visibility': 'visible'});
+		e.preventDefault();
+		});
+});
+</script>
+</html>
