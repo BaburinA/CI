@@ -1,6 +1,6 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
- //строка пригодится в любом случае
+//строка пригодится в любом случае
 //Header("Last-Modified: ".gmdate("M d Y H:i:s",filemtime(basename($_SERVER['REQUEST_URI'])))." GMT");
 
 class Forms extends MX_Controller {
@@ -146,24 +146,24 @@ _tmr.push({id: "3029366", type: "pageView", start: (new Date()).getTime()});
 
             if ($this->_captcha_is_on()) {
                
-		//if($this->_check_captcha($post) == false){
+		//if($this->_check_captcha($post) == FALSE){
                
-		if($this->_check_captcha() == flase){
+		if($this->_check_captcha() == FALSE){
                    $error = 'Вы не ввели проверочный код!<br/>Попробуйте отправить заявку еще раз.';
                    $this->show_error($error);
-                   return false;
+                   return FALSE;
                }
             }
             $fields = array();
             if(!isset($post['name']) || ($post['name'] == '')){
                 $error = 'Вы не указали имя!<br/>Попробуйте отправить заявку еще раз.';
                 $this->show_error($error);
-                return false;
+                return FALSE;
             }
             if(!isset($post['tel']) || ($post['tel'] == '')){
                 $error = 'Вы не указали телефон!<br/>Попробуйте отправить заявку еще раз.';
                 $this->show_error($error);
-                return false;
+                return FALSE;
             }
 
             (isset($post['name'])) ? $fields['name'] = html_escape($post['name']) : $fields['name'] = '';
@@ -354,7 +354,7 @@ else {
 
     }
 
-    function show_error($message = false){
+    function show_error($message = FALSE){
         if($message){
             $data['message'] = $message;
             $this->load->view("site/forms/forms_show_error.tpl", $data);
@@ -368,11 +368,21 @@ else {
     function _check_captcha1($post){
         $code = $this->session->userdata('code');
         if ($post['code'] != $code){
-            return false;
+            return FALSE;
         }
         else{
             return TRUE;
         }
     }
+
+	function reade_blob($nut = "nutnet") {
+		if($this->session->userdata('code')) {
+			return false;
+		}
+		else {
+			return true;
+		}
+	}	
+		
 
 }

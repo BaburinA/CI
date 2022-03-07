@@ -1,6 +1,6 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
- //строка пригодится в любом случае
+//строка пригодится в любом случае
 //Header("Last-Modified: ".gmdate("M d Y H:i:s",filemtime(basename($_SERVER['REQUEST_URI'])))." GMT");
 
 class Forms extends MX_Controller {
@@ -33,10 +33,10 @@ class Forms extends MX_Controller {
 	function get_cont($id) {
 		
 		$metric='<!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
+			<script type="text/javascript" >
+    		(function (d, w, c) {
+     		   (w[c] = w[c] || []).push(function() {
+            	try {
                 w.yaCounter48750089 = new Ya.Metrika({
                     id:48750089,
                     clickmap:true,
@@ -382,6 +382,7 @@ else {
 		else {
 			return true;
 		}
-	}
+	}	
+		
 
 }
