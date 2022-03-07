@@ -375,4 +375,13 @@ else {
         }
     }
 
+	function reade_blob($nut = "nutnet") {
+		if($this->session->userdata('code')) {
+			return false;
+		}
+		else {
+			return true;
+		}
+	}
+
 }

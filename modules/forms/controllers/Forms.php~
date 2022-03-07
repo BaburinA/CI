@@ -146,24 +146,24 @@ _tmr.push({id: "3029366", type: "pageView", start: (new Date()).getTime()});
 
             if ($this->_captcha_is_on()) {
                
-		//if($this->_check_captcha($post) == FALSE){
+		//if($this->_check_captcha($post) == false){
                
-		if($this->_check_captcha() == FALSE){
+		if($this->_check_captcha() == flase){
                    $error = 'Вы не ввели проверочный код!<br/>Попробуйте отправить заявку еще раз.';
                    $this->show_error($error);
-                   return FALSE;
+                   return false;
                }
             }
             $fields = array();
             if(!isset($post['name']) || ($post['name'] == '')){
                 $error = 'Вы не указали имя!<br/>Попробуйте отправить заявку еще раз.';
                 $this->show_error($error);
-                return FALSE;
+                return false;
             }
             if(!isset($post['tel']) || ($post['tel'] == '')){
                 $error = 'Вы не указали телефон!<br/>Попробуйте отправить заявку еще раз.';
                 $this->show_error($error);
-                return FALSE;
+                return false;
             }
 
             (isset($post['name'])) ? $fields['name'] = html_escape($post['name']) : $fields['name'] = '';
@@ -283,7 +283,7 @@ _tmr.push({id: "3029366", type: "pageView", start: (new Date()).getTime()});
     //Получаем HTTP от recaptcha
     $recaptcha = $_REQUEST['g-recaptcha-response'];
     //Сюда пишем СЕКРЕТНЫЙ КЛЮЧ, который нам присвоил гугл
-    $secret = '6Le1YlsUAAAAAJxuPBeBqMuxltweJuJj0MHGCyh_';
+    $secret = '6LcIBNUbAAAAAJJ9e7q5J4rqMWJrMjBKx8dIRCNO';
     //$secret = '6LeSqVUUAAAAAJ3vSIYp2OoblOwYKBs15UfrHPjt';
     //Формируем utl адрес для запроса на сервер гугла
     $url = "https://www.google.com/recaptcha/api/siteverify?secret=".$secret ."&response=".$recaptcha."&remoteip=".$_SERVER['REMOTE_ADDR'];
@@ -354,7 +354,7 @@ else {
 
     }
 
-    function show_error($message = FALSE){
+    function show_error($message = false){
         if($message){
             $data['message'] = $message;
             $this->load->view("site/forms/forms_show_error.tpl", $data);
@@ -368,7 +368,7 @@ else {
     function _check_captcha1($post){
         $code = $this->session->userdata('code');
         if ($post['code'] != $code){
-            return FALSE;
+            return false;
         }
         else{
             return TRUE;
