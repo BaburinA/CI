@@ -15,7 +15,7 @@ class NForm extends MX_Controller {
         $is_ajax = $this->input->is_ajax_request();
         if ($is_ajax) {
             $post = $this->input->post();
-            $post = $this->security->xss_clean($post);
+            $posta = $this->security->xss_clean($post);
             
         }
 
